@@ -29,7 +29,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Aliases
-alias ll='ls -alF'
+alias ls='ls --color --group-directories-first'
+alias ll='ls -alF --color'
 alias la='ls -A'
 
 # Envrironment variables

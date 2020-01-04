@@ -14,6 +14,7 @@ filetype plugin indent on
 
 " Mappings
 inoremap jk <ESC>`^
+nnoremap ; :
 
 " Syntax
 syntax on
