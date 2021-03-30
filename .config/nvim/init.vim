@@ -2,6 +2,7 @@ set number
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set clipboard+=unnamedplus
 
 imap jk <Esc>
 nmap q <Nop>

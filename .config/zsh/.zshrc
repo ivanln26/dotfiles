@@ -12,18 +12,18 @@ RPROMPT=$'$(__git_ps1 "%s")'
 
 # Alias
 alias ls="ls --color"
-alias ll="ls -la --color=auto --group-directories-first"
+alias ll="ls -lAh --color --group-directories-first"
 alias szshrc="source $HOME/.config/zsh/.zshrc"
 alias tmux="tmux -f $HOME/.config/tmux/config"
 alias vim="nvim"
 alias zshrc="$EDITOR $HOME/.config/zsh/.zshrc"
 
 # Variables
-export BROWSER="brave"
+export BROWSER="chromium"
 export EDITOR="nvim"
+export PICTURES="$HOME/documents"
 
 # Environment variables
-export PATH="$PATH:$HOME/.local/scripts"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.config/npm-global/bin"
 
@@ -32,4 +32,4 @@ export LESSHISTFILE="$XDG_CACHE_HOME/less/history"
 export PYTHONSTARTUP="$HOME/.config/python/init"
 
 # Keychain
-eval $(keychain --dir ~/.config/keychain --eval --quiet id_rsa)
+eval `keychain --dir $HOME/.config/keychain --eval --quiet --agents ssh id_rsa`
